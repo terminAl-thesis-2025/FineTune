@@ -1,8 +1,4 @@
 #%% md
-# # _____________________
-# #          Achtung bei "Run All"
-# # _____________________
-#%% md
 # # Erstellen des Batch-Sets
 #%%
 # Für diverse Datenoperationen
