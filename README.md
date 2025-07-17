@@ -148,6 +148,10 @@ Siehe [LICENSE](LICENSE) Datei für Details.
 ## Dependencies: 
 Dieses Projekt nutzt verschiedene Python-Pakete (siehe `requirements.txt`), die unter ihren jeweiligen Lizenzen stehen. Bei der Nutzung der Dependencies sind deren Lizenzbedingungen zu beachten.
 
+### Verwendete Basis-Modelle
+
+**DeBERTa v3 Base:**
+Das Finetuning basiert auf [`microsoft/deberta-v3-base`](https://huggingface.co/microsoft/deberta-v3-base), welches unter der MIT-Lizenz von Microsoft veröffentlicht wurde.
 
 ### Verwendete LLM-Modelle
 Dieses Projekt wurde mit Meta Llama-Modellen (Llama 3.1 und Llama 3.2) entwickelt und getestet. Bei der Verwendung von Llama-Modellen gelten die entsprechenden Lizenzbedingungen von Meta:
