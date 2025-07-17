@@ -145,6 +145,18 @@ Das trainierte Modell wird automatisch zu Hugging Face Hub hochgeladen:
 
 Siehe [LICENSE](LICENSE) Datei für Details.
 
+## Dependencies: 
+Dieses Projekt nutzt verschiedene Python-Pakete (siehe `requirements.txt`), die unter ihren jeweiligen Lizenzen stehen. Bei der Nutzung der Dependencies sind deren Lizenzbedingungen zu beachten.
+
+
+### Verwendete LLM-Modelle
+Dieses Projekt wurde mit Meta Llama-Modellen (Llama 3.1 und Llama 3.2) entwickelt und getestet. Bei der Verwendung von Llama-Modellen gelten die entsprechenden Lizenzbedingungen von Meta:
+
+- **Llama 3.1:** Unterliegt der Llama 3.1 Community License von Meta
+- **Llama 3.2:** Unterliegt der Llama 3.2 Community License von Meta
+
+Für kommerzielle Nutzung oder bei mehr als 700 Millionen monatlich aktiven Nutzenden sind separate Lizenzvereinbarungen mit Meta erforderlich. Weitere Informationen und die vollständigen Lizenzbedingungen finden sich auf der Meta Llama Website.
+
 ### Dataset-Lizenzen
 
 Dieses Projekt verwendet Daten aus verschiedenen Quellen mit unterschiedlichen Lizenzen:
