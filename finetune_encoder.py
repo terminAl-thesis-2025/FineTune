@@ -1,18 +1,42 @@
 #%%
+# Für sicheres Parsing von JSON-Strings als Python-Literale (Fallback-Parser)
 import ast
-import json
-import pandas as pd
-import os
-import warnings
-from collections import Counter
-from datasets import load_dataset, Dataset
-from dotenv import load_dotenv
-from pathlib import Path
-from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer, EarlyStoppingCallback
-import matplotlib.pyplot as plt
-from transformers import AutoTokenizer
-from transformers import DataCollatorWithPadding
 
+# Für JSON-Datei-Operationen (Laden der synthetischen Trainingsdaten)
+import json
+
+# Für DataFrame-Operationen und Training-Log-Analyse
+import pandas as pd
+
+# Für Umgebungsvariablen-Zugriff (Hugging Face Token)
+import os
+
+# Für das Unterdrücken von SyntaxWarnings beim JSON-Parsing
+import warnings
+
+# Für das Zählen der Label-Verteilung (low/medium/high risk)
+from collections import Counter
+
+# Für die Erstellung von Hugging Face Datasets aus Listen
+from datasets import Dataset
+
+# Für das Laden von .env-Dateien mit API-Tokens
+from dotenv import load_dotenv
+
+# Für moderne Dateipfad-Operationen (Glob-Pattern für JSON-Files)
+from pathlib import Path
+
+# Hugging Face Transformers: Model, Training-Config, Trainer und Early Stopping
+from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer, EarlyStoppingCallback
+
+# Für Visualisierung der Training/Validation Loss Kurven
+import matplotlib.pyplot as plt
+
+# Für die Tokenisierung der Command-Texte (DeBERTa Tokenizer)
+from transformers import AutoTokenizer
+
+# Für dynamisches Padding der Batches während des Trainings
+from transformers import DataCollatorWithPadding
 
 
 load_dotenv()

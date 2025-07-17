@@ -5,17 +5,17 @@
 # 3. Bereinigung der Daten
 # 4. Upload zu Huggingface
 # 
-#%% md
-# Laden der benötigten Libraries
 #%%
-# Für diverse Datenoperationen
+# Für DataFrame-Operationen, Datenbereinigung und Deduplication
 import pandas as pd
 
-# Zum Laden von Datasets von Huggingface
+# Zum Laden von Datasets von Huggingface Hub und Upload des bereinigten Datasets
 from datasets import load_dataset, Dataset as DS
-from torch.utils.data import Dataset
 
+# Für SQL-Syntax-Validierung und Parsing (Prüfung ob SQL-Commands syntaktisch korrekt sind)
 import sqlparse
+
+# Für Bash-Syntax-Validierung via 'bash -n' Command (SICHERHEITSRISIKO - nur in isolierter Umgebung!)
 import subprocess
 #%% md
 # Erstellen eines Pandas Dataframe, in dem alle Datenpunkte gemeinsam gesammelt werden

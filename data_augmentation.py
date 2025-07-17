@@ -5,17 +5,19 @@
 #%% md
 # # Erstellen des Batch-Sets
 #%%
-# Für diverse Datenoperationen
+# Für diverse Datenoperationen und DataFrame-Manipulation
 import pandas as pd
-from accelerate.commands.config.update import description
 
-# Zum Laden von Datasets von Huggingface
+# Zum Laden von Datasets von Huggingface Hub
 from datasets import load_dataset, Dataset as DS
 
+# Für HTTP-Requests an die Ollama API (localhost:11434)
 import requests as r
 
+# Für JSON-Serialisierung und -Deserialisierung der API-Responses
 import json
 
+# Für Progress bars bei Batch-Verarbeitung
 from tqdm import tqdm
 
 #%% md
